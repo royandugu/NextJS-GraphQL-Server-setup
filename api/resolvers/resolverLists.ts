@@ -2,12 +2,12 @@ import { hello, publishNovel, viewNovels, viewIndvNovels, updateNovel,deleteNove
 
 const resolvers = {
     Query: {
-        hello: hello
+        hello: hello,
+        viewNovels:viewNovels,
+        viewIndvNovels:viewIndvNovels
     },
     Mutation: {
         publishNovel: publishNovel,
-        viewNovels:viewNovels,
-        viewIndvNovels:viewIndvNovels,
         updateNovel:updateNovel,
         deleteNovel:deleteNovel
     }
